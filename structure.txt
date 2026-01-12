@@ -1,0 +1,24 @@
+.
+├── app
+│   └── main.py
+├── data
+│   ├── processed
+│   └── raw
+│       └── credit_risk_dataset.csv
+├── Dockerfile
+├── Notebooks
+├── README.md
+├── requirements.txt
+├── src
+│   ├── artifacts
+│   │   ├── mlruns
+│   │   └── models
+│   ├── config
+│   │   └── config.yaml
+│   ├── __init__.py
+│   ├── models
+│   └── utils
+│       └── __init__.py
+└── structure.txt
+
+13 directories, 9 files
