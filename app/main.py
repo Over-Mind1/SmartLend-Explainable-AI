@@ -1,3 +1,5 @@
-import mlflow
+from src.utils.Data_Loader import data_loader
 
-experiment=mlflow.create_experiment("SmartLend_Explainable_AI")
+if __name__ == "__main__":
+    df = data_loader()
+    print(df.head())

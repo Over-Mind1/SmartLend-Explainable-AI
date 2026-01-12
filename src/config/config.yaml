@@ -1,0 +1,10 @@
+Data:
+  train_path: Data/raw/train.csv
+  X_test_path: Data/raw/test.csv
+  Y_test_path: Data/raw/prediction_submission.csv
+  processed_path: Data/processed
+
+
+Model:
+  lgbm_save_path: src/artifacts/lgbm
+  xgb_save_path: src/artifacts/xgb

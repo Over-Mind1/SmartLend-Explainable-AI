@@ -1,24 +1,41 @@
 .
 ├── app
 │   └── main.py
-├── data
+├── Data
 │   ├── processed
+│   │   └── loan_data.csv
 │   └── raw
-│       └── credit_risk_dataset.csv
+│       └── Loan_default.csv
 ├── Dockerfile
+├── mlflow.db
+├── mlruns
 ├── Notebooks
+│   ├── EDA.ipynb
+│   └── LoanDefaultPrediction_johnson.ipynb
 ├── README.md
 ├── requirements.txt
 ├── src
 │   ├── artifacts
-│   │   ├── mlruns
 │   │   └── models
 │   ├── config
+│   │   ├── config.py
 │   │   └── config.yaml
 │   ├── __init__.py
 │   ├── models
+│   │   ├── __init__.py
+│   │   ├── InterestRate
+│   │   │   ├── evaluate.py
+│   │   │   ├── predict.py
+│   │   │   └── train.py
+│   │   ├── Loan
+│   │   │   ├── pipline.py
+│   │   │   └── tuner.py
+│   │   └── processor.py
 │   └── utils
+│       ├── Data_Loader.py
+│       ├── FeatureExtractor.py
+│       ├── focal_loss.py
 │       └── __init__.py
 └── structure.txt
 
-13 directories, 9 files
+15 directories, 24 files

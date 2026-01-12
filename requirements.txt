@@ -8,8 +8,11 @@ xgboost==3.1.1
 catboost==1.2.8
 shap==0.50.0
 lightgbm==4.6.0
+#----------------------------------------
 optuna==4.6.0
 mlflow==3.8.1
+optuna-integration
+ optuna-dashboard
 #----------------------------------------
 matplotlib==3.10.7
 seaborn==0.13.2
