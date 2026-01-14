@@ -7,4 +7,11 @@ Data:
 
 Model:
   lgbm_save_path: src/artifacts/lgbm
+  lgbm_report_path: src/artifacts/lgbm/report
   xgb_save_path: src/artifacts/xgb
+
+Processor:
+  Processor_path: src/artifacts
+
+lgbm_shap:
+  shap_save_path: src/artifacts/lgbm/shap

@@ -1,0 +1,23 @@
+# Ignore git files
+.git
+.gitignore
+
+# Ignore local virtual environments
+venv/
+env/
+.env
+
+# Ignore python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore heavy raw data (optional - if you only need the models)
+# data/raw/
+
+# Ignore Mac system files
+.DS_Store

@@ -15,11 +15,8 @@ from sklearn.metrics import (
     RocCurveDisplay,
     confusion_matrix, 
     classification_report,
-    f1_score, 
-    precision_score, 
-    recall_score
 )
-from src.config.config import xgb_save_path, lgbm_save_path
+from src.config.config import xgb_save_path, lgbm_report_path as lgbm_save_path
 
 
 def get_model_save_path(model_type: str) -> Path:

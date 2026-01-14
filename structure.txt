@@ -1,41 +1,48 @@
 .
 ├── app
+│   ├── __init__.py
 │   └── main.py
 ├── Data
 │   ├── processed
-│   │   └── loan_data.csv
 │   └── raw
-│       └── Loan_default.csv
 ├── Dockerfile
-├── mlflow.db
-├── mlruns
 ├── Notebooks
 │   ├── EDA.ipynb
-│   └── LoanDefaultPrediction_johnson.ipynb
+│   └── Loan.ipynb
 ├── README.md
 ├── requirements.txt
 ├── src
 │   ├── artifacts
-│   │   └── models
+│   │   ├── lgbm
+│   │   │   ├── lgbm_model.pkl
+│   │   │   ├── report
+│   │   │   └── shap
+│   │   │       ├── feature_names.pkl
+│   │   │       ├── shap_explainer.pkl
+│   │   │       └── shap_values.pkl
+│   │   ├── preprocessor.pkl
+│   │   └── xgb
 │   ├── config
 │   │   ├── config.py
 │   │   └── config.yaml
 │   ├── __init__.py
 │   ├── models
+│   │   ├── evaluate.py
 │   │   ├── __init__.py
-│   │   ├── InterestRate
-│   │   │   ├── evaluate.py
-│   │   │   ├── predict.py
-│   │   │   └── train.py
-│   │   ├── Loan
+│   │   ├── lgbm
 │   │   │   ├── pipline.py
-│   │   │   └── tuner.py
-│   │   └── processor.py
+│   │   │   ├── shap_features.py
+│   │   │   ├── threshold_tunning.py  # tunning based on bussiness needs 
+│   │   │   └── tuner.py  # optuna tuner
+│   │   ├── processor.py
+│   │   └── xgb
+│   │       ├── pipline.py
+│   │       └── tuner.py  # optuna tuner
+│   ├── router
+│   │   ├── __init__.py
+│   │   ├── predictor.py
+│   │   └── validator.py
 │   └── utils
 │       ├── Data_Loader.py
-│       ├── FeatureExtractor.py
-│       ├── focal_loss.py
 │       └── __init__.py
-└── structure.txt
 
-15 directories, 24 files

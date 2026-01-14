@@ -1,0 +1,7 @@
+metric,default,optimized
+threshold,0.5,0.44999999999999984
+false_negatives,3398.0,2468.0
+false_positives,21948.0,29776.0
+recall_class_1,0.0,0.0
+precision_class_1,0.0,0.0
+f1_class_1,0.0,0.0
